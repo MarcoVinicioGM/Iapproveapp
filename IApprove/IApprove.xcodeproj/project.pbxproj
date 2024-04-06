@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E14F2F52BC1DC6B00B87E03 /* CameraService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E14F2F42BC1DC6B00B87E03 /* CameraService.swift */; };
+		2E14F2F72BC1EFBD00B87E03 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E14F2F62BC1EFBD00B87E03 /* CameraView.swift */; };
+		2E14F2F92BC2032500B87E03 /* CustomCameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E14F2F82BC2032400B87E03 /* CustomCameraView.swift */; };
 		F081801B2BC1CB5900D9D99B /* IApproveApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F081801A2BC1CB5900D9D99B /* IApproveApp.swift */; };
 		F081801D2BC1CB5A00D9D99B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F081801C2BC1CB5A00D9D99B /* ContentView.swift */; };
 		F081801F2BC1CB5B00D9D99B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F081801E2BC1CB5B00D9D99B /* Assets.xcassets */; };
@@ -34,6 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2E14F2F42BC1DC6B00B87E03 /* CameraService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraService.swift; sourceTree = "<group>"; };
+		2E14F2F62BC1EFBD00B87E03 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		2E14F2F82BC2032400B87E03 /* CustomCameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCameraView.swift; sourceTree = "<group>"; };
 		F08180172BC1CB5900D9D99B /* IApprove.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IApprove.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F081801A2BC1CB5900D9D99B /* IApproveApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IApproveApp.swift; sourceTree = "<group>"; };
 		F081801C2BC1CB5A00D9D99B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -96,6 +102,9 @@
 			children = (
 				F081801A2BC1CB5900D9D99B /* IApproveApp.swift */,
 				F081801C2BC1CB5A00D9D99B /* ContentView.swift */,
+				2E14F2F42BC1DC6B00B87E03 /* CameraService.swift */,
+				2E14F2F82BC2032400B87E03 /* CustomCameraView.swift */,
+				2E14F2F62BC1EFBD00B87E03 /* CameraView.swift */,
 				F081801E2BC1CB5B00D9D99B /* Assets.xcassets */,
 				F08180202BC1CB5B00D9D99B /* Preview Content */,
 			);
@@ -259,6 +268,9 @@
 			files = (
 				F081801D2BC1CB5A00D9D99B /* ContentView.swift in Sources */,
 				F081801B2BC1CB5900D9D99B /* IApproveApp.swift in Sources */,
+				2E14F2F92BC2032500B87E03 /* CustomCameraView.swift in Sources */,
+				2E14F2F52BC1DC6B00B87E03 /* CameraService.swift in Sources */,
+				2E14F2F72BC1EFBD00B87E03 /* CameraView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,11 +436,12 @@
 				DEVELOPMENT_ASSET_PATHS = "\"IApprove/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Please allow photos to be taken";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -452,11 +465,12 @@
 				DEVELOPMENT_ASSET_PATHS = "\"IApprove/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Please allow photos to be taken";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

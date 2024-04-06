@@ -8,17 +8,39 @@
 import SwiftUI
 
 struct ContentView: View {
-    var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+    @State private var capturedImage: UIImage? = nil
+    @State private var isCustomCameraViewPresented = false
+    
+    var body: some View{
+        ZStack{
+            if capturedImage != nil{
+                Image(uiImage: capturedImage!)
+                    .resizable()
+                    .scaledToFill()
+                    .ignoresSafeArea()
+            }else{
+                Color(UIColor.systemBackground)
+            }
+            VStack{
+                Spacer()
+                Button(action:{
+                    isCustomCameraViewPresented.toggle()
+                }, label: {
+                    Image(systemName: "camera.fill")
+                        .font(.largeTitle)
+                        .padding()
+                        .background(Color.black)
+                        .clipShape(Circle())
+                })
+                .padding(.bottom)
+                .sheet(isPresented: $isCustomCameraViewPresented, content: {CustomCameraView(capturedImage: $capturedImage)
+                })
+            }
         }
-        .padding()
     }
-}
-
-#Preview {
-    ContentView()
+    struct ContentView_Previews: PreviewProvider{
+        static var previews: some View{
+            ContentView()
+        }
+    }
 }
