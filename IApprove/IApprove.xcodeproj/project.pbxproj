@@ -10,6 +10,30 @@
 		2E14F2F52BC1DC6B00B87E03 /* CameraService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E14F2F42BC1DC6B00B87E03 /* CameraService.swift */; };
 		2E14F2F72BC1EFBD00B87E03 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E14F2F62BC1EFBD00B87E03 /* CameraView.swift */; };
 		2E14F2F92BC2032500B87E03 /* CustomCameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E14F2F82BC2032400B87E03 /* CustomCameraView.swift */; };
+		2E23DFBD2BC22F1F00D3E38C /* FoodAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E23DFBC2BC22F1F00D3E38C /* FoodAPI.swift */; };
+		2E23DFE52BC22F4200D3E38C /* BarcodeScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E23DFBE2BC22F4200D3E38C /* BarcodeScannerViewController.swift */; };
+		2E23DFE62BC22F4200D3E38C /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E23DFBF2BC22F4200D3E38C /* CameraViewController.swift */; };
+		2E23DFE72BC22F4200D3E38C /* HeaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E23DFC02BC22F4200D3E38C /* HeaderViewController.swift */; };
+		2E23DFE82BC22F4200D3E38C /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E23DFC12BC22F4200D3E38C /* MessageViewController.swift */; };
+		2E23DFE92BC22F4200D3E38C /* FocusViewType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E23DFC32BC22F4200D3E38C /* FocusViewType.swift */; };
+		2E23DFEA2BC22F4200D3E38C /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E23DFC42BC22F4200D3E38C /* State.swift */; };
+		2E23DFEB2BC22F4200D3E38C /* TorchMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E23DFC52BC22F4200D3E38C /* TorchMode.swift */; };
+		2E23DFEC2BC22F4200D3E38C /* AVMetadataObject+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E23DFC72BC22F4200D3E38C /* AVMetadataObject+Extensions.swift */; };
+		2E23DFED2BC22F4200D3E38C /* NSLayoutConstraint+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E23DFC82BC22F4200D3E38C /* NSLayoutConstraint+Extensions.swift */; };
+		2E23DFEE2BC22F4200D3E38C /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E23DFC92BC22F4200D3E38C /* UIView+Extensions.swift */; };
+		2E23DFEF2BC22F4200D3E38C /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E23DFCA2BC22F4200D3E38C /* UIViewController+Extensions.swift */; };
+		2E23DFF02BC22F4200D3E38C /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E23DFCC2BC22F4200D3E38C /* Functions.swift */; };
+		2E23DFF12BC22F4200D3E38C /* VideoPermissionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E23DFCD2BC22F4200D3E38C /* VideoPermissionService.swift */; };
+		2E23DFF22BC22F4200D3E38C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E23DFCF2BC22F4200D3E38C /* Images.xcassets */; };
+		2E23DFF32BC22F4200D3E38C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2E23DFD22BC22F4200D3E38C /* Localizable.strings */; };
+		2E23DFF42BC22F4200D3E38C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2E23DFD42BC22F4200D3E38C /* Localizable.strings */; };
+		2E23DFF52BC22F4200D3E38C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2E23DFD62BC22F4200D3E38C /* Localizable.strings */; };
+		2E23DFF62BC22F4200D3E38C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2E23DFD82BC22F4200D3E38C /* Localizable.strings */; };
+		2E23DFF72BC22F4200D3E38C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2E23DFDA2BC22F4200D3E38C /* Localizable.strings */; };
+		2E23DFF82BC22F4200D3E38C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2E23DFDC2BC22F4200D3E38C /* Localizable.strings */; };
+		2E23DFF92BC22F4200D3E38C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2E23DFDE2BC22F4200D3E38C /* Localizable.strings */; };
+		2E23DFFA2BC22F4200D3E38C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2E23DFE02BC22F4200D3E38C /* Localizable.strings */; };
+		2E23DFFB2BC22F4200D3E38C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2E23DFE22BC22F4200D3E38C /* Localizable.strings */; };
 		F081801B2BC1CB5900D9D99B /* IApproveApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F081801A2BC1CB5900D9D99B /* IApproveApp.swift */; };
 		F081801D2BC1CB5A00D9D99B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F081801C2BC1CB5A00D9D99B /* ContentView.swift */; };
 		F081801F2BC1CB5B00D9D99B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F081801E2BC1CB5B00D9D99B /* Assets.xcassets */; };
@@ -40,6 +64,30 @@
 		2E14F2F42BC1DC6B00B87E03 /* CameraService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraService.swift; sourceTree = "<group>"; };
 		2E14F2F62BC1EFBD00B87E03 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
 		2E14F2F82BC2032400B87E03 /* CustomCameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCameraView.swift; sourceTree = "<group>"; };
+		2E23DFBC2BC22F1F00D3E38C /* FoodAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FoodAPI.swift; path = ../../../../Mainapprove/IApprove/IApprove/FoodAPI.swift; sourceTree = "<group>"; };
+		2E23DFBE2BC22F4200D3E38C /* BarcodeScannerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarcodeScannerViewController.swift; sourceTree = "<group>"; };
+		2E23DFBF2BC22F4200D3E38C /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		2E23DFC02BC22F4200D3E38C /* HeaderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderViewController.swift; sourceTree = "<group>"; };
+		2E23DFC12BC22F4200D3E38C /* MessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
+		2E23DFC32BC22F4200D3E38C /* FocusViewType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FocusViewType.swift; sourceTree = "<group>"; };
+		2E23DFC42BC22F4200D3E38C /* State.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
+		2E23DFC52BC22F4200D3E38C /* TorchMode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TorchMode.swift; sourceTree = "<group>"; };
+		2E23DFC72BC22F4200D3E38C /* AVMetadataObject+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AVMetadataObject+Extensions.swift"; sourceTree = "<group>"; };
+		2E23DFC82BC22F4200D3E38C /* NSLayoutConstraint+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSLayoutConstraint+Extensions.swift"; sourceTree = "<group>"; };
+		2E23DFC92BC22F4200D3E38C /* UIView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		2E23DFCA2BC22F4200D3E38C /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		2E23DFCC2BC22F4200D3E38C /* Functions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
+		2E23DFCD2BC22F4200D3E38C /* VideoPermissionService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoPermissionService.swift; sourceTree = "<group>"; };
+		2E23DFCF2BC22F4200D3E38C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		2E23DFD12BC22F4200D3E38C /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2E23DFD32BC22F4200D3E38C /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2E23DFD52BC22F4200D3E38C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2E23DFD72BC22F4200D3E38C /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2E23DFD92BC22F4200D3E38C /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		2E23DFDB2BC22F4200D3E38C /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2E23DFDD2BC22F4200D3E38C /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2E23DFDF2BC22F4200D3E38C /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2E23DFE12BC22F4200D3E38C /* pl-PL */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pl-PL"; path = "pl-PL.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		F08180172BC1CB5900D9D99B /* IApprove.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IApprove.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F081801A2BC1CB5900D9D99B /* IApproveApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IApproveApp.swift; sourceTree = "<group>"; };
 		F081801C2BC1CB5A00D9D99B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -77,6 +125,85 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2E23DFC22BC22F4200D3E38C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2E23DFBE2BC22F4200D3E38C /* BarcodeScannerViewController.swift */,
+				2E23DFBF2BC22F4200D3E38C /* CameraViewController.swift */,
+				2E23DFC02BC22F4200D3E38C /* HeaderViewController.swift */,
+				2E23DFC12BC22F4200D3E38C /* MessageViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		2E23DFC62BC22F4200D3E38C /* DataStructures */ = {
+			isa = PBXGroup;
+			children = (
+				2E23DFC32BC22F4200D3E38C /* FocusViewType.swift */,
+				2E23DFC42BC22F4200D3E38C /* State.swift */,
+				2E23DFC52BC22F4200D3E38C /* TorchMode.swift */,
+			);
+			path = DataStructures;
+			sourceTree = "<group>";
+		};
+		2E23DFCB2BC22F4200D3E38C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2E23DFC72BC22F4200D3E38C /* AVMetadataObject+Extensions.swift */,
+				2E23DFC82BC22F4200D3E38C /* NSLayoutConstraint+Extensions.swift */,
+				2E23DFC92BC22F4200D3E38C /* UIView+Extensions.swift */,
+				2E23DFCA2BC22F4200D3E38C /* UIViewController+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		2E23DFCE2BC22F4200D3E38C /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				2E23DFCC2BC22F4200D3E38C /* Functions.swift */,
+				2E23DFCD2BC22F4200D3E38C /* VideoPermissionService.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		2E23DFD02BC22F4200D3E38C /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				2E23DFCF2BC22F4200D3E38C /* Images.xcassets */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		2E23DFE32BC22F4200D3E38C /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				2E23DFD22BC22F4200D3E38C /* Localizable.strings */,
+				2E23DFD42BC22F4200D3E38C /* Localizable.strings */,
+				2E23DFD62BC22F4200D3E38C /* Localizable.strings */,
+				2E23DFD82BC22F4200D3E38C /* Localizable.strings */,
+				2E23DFDA2BC22F4200D3E38C /* Localizable.strings */,
+				2E23DFDC2BC22F4200D3E38C /* Localizable.strings */,
+				2E23DFDE2BC22F4200D3E38C /* Localizable.strings */,
+				2E23DFE02BC22F4200D3E38C /* Localizable.strings */,
+				2E23DFE22BC22F4200D3E38C /* Localizable.strings */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
+		2E23DFE42BC22F4200D3E38C /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				2E23DFC22BC22F4200D3E38C /* Controllers */,
+				2E23DFC62BC22F4200D3E38C /* DataStructures */,
+				2E23DFCB2BC22F4200D3E38C /* Extensions */,
+				2E23DFCE2BC22F4200D3E38C /* Helpers */,
+				2E23DFD02BC22F4200D3E38C /* Images */,
+				2E23DFE32BC22F4200D3E38C /* Localization */,
+			);
+			name = Sources;
+			path = ../../../../Iapproveapp/IApprove/Sources;
+			sourceTree = "<group>";
+		};
 		F081800E2BC1CB5900D9D99B = {
 			isa = PBXGroup;
 			children = (
@@ -100,6 +227,7 @@
 		F08180192BC1CB5900D9D99B /* IApprove */ = {
 			isa = PBXGroup;
 			children = (
+				2E23DFBC2BC22F1F00D3E38C /* FoodAPI.swift */,
 				F081801A2BC1CB5900D9D99B /* IApproveApp.swift */,
 				F081801C2BC1CB5A00D9D99B /* ContentView.swift */,
 				2E14F2F42BC1DC6B00B87E03 /* CameraService.swift */,
@@ -132,6 +260,7 @@
 			children = (
 				F08180352BC1CB5C00D9D99B /* IApproveUITests.swift */,
 				F08180372BC1CB5C00D9D99B /* IApproveUITestsLaunchTests.swift */,
+				2E23DFE42BC22F4200D3E38C /* Sources */,
 			);
 			path = IApproveUITests;
 			sourceTree = "<group>";
@@ -222,6 +351,14 @@
 			knownRegions = (
 				en,
 				Base,
+				de,
+				ja,
+				tr,
+				"pt-BR",
+				ru,
+				fr,
+				nl,
+				"pl-PL",
 			);
 			mainGroup = F081800E2BC1CB5900D9D99B;
 			productRefGroup = F08180182BC1CB5900D9D99B /* Products */;
@@ -256,6 +393,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E23DFF62BC22F4200D3E38C /* Localizable.strings in Resources */,
+				2E23DFF72BC22F4200D3E38C /* Localizable.strings in Resources */,
+				2E23DFF22BC22F4200D3E38C /* Images.xcassets in Resources */,
+				2E23DFF82BC22F4200D3E38C /* Localizable.strings in Resources */,
+				2E23DFFA2BC22F4200D3E38C /* Localizable.strings in Resources */,
+				2E23DFFB2BC22F4200D3E38C /* Localizable.strings in Resources */,
+				2E23DFF52BC22F4200D3E38C /* Localizable.strings in Resources */,
+				2E23DFF92BC22F4200D3E38C /* Localizable.strings in Resources */,
+				2E23DFF42BC22F4200D3E38C /* Localizable.strings in Resources */,
+				2E23DFF32BC22F4200D3E38C /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,6 +415,7 @@
 			files = (
 				F081801D2BC1CB5A00D9D99B /* ContentView.swift in Sources */,
 				F081801B2BC1CB5900D9D99B /* IApproveApp.swift in Sources */,
+				2E23DFBD2BC22F1F00D3E38C /* FoodAPI.swift in Sources */,
 				2E14F2F92BC2032500B87E03 /* CustomCameraView.swift in Sources */,
 				2E14F2F52BC1DC6B00B87E03 /* CameraService.swift in Sources */,
 				2E14F2F72BC1EFBD00B87E03 /* CameraView.swift in Sources */,
@@ -286,8 +434,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E23DFEC2BC22F4200D3E38C /* AVMetadataObject+Extensions.swift in Sources */,
 				F08180382BC1CB5C00D9D99B /* IApproveUITestsLaunchTests.swift in Sources */,
+				2E23DFEF2BC22F4200D3E38C /* UIViewController+Extensions.swift in Sources */,
+				2E23DFF02BC22F4200D3E38C /* Functions.swift in Sources */,
+				2E23DFE62BC22F4200D3E38C /* CameraViewController.swift in Sources */,
+				2E23DFE72BC22F4200D3E38C /* HeaderViewController.swift in Sources */,
+				2E23DFEB2BC22F4200D3E38C /* TorchMode.swift in Sources */,
 				F08180362BC1CB5C00D9D99B /* IApproveUITests.swift in Sources */,
+				2E23DFEE2BC22F4200D3E38C /* UIView+Extensions.swift in Sources */,
+				2E23DFE82BC22F4200D3E38C /* MessageViewController.swift in Sources */,
+				2E23DFF12BC22F4200D3E38C /* VideoPermissionService.swift in Sources */,
+				2E23DFE92BC22F4200D3E38C /* FocusViewType.swift in Sources */,
+				2E23DFE52BC22F4200D3E38C /* BarcodeScannerViewController.swift in Sources */,
+				2E23DFEA2BC22F4200D3E38C /* State.swift in Sources */,
+				2E23DFED2BC22F4200D3E38C /* NSLayoutConstraint+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,6 +466,81 @@
 			targetProxy = F08180322BC1CB5C00D9D99B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2E23DFD22BC22F4200D3E38C /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2E23DFD12BC22F4200D3E38C /* de */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		2E23DFD42BC22F4200D3E38C /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2E23DFD32BC22F4200D3E38C /* ja */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		2E23DFD62BC22F4200D3E38C /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2E23DFD52BC22F4200D3E38C /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		2E23DFD82BC22F4200D3E38C /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2E23DFD72BC22F4200D3E38C /* tr */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		2E23DFDA2BC22F4200D3E38C /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2E23DFD92BC22F4200D3E38C /* pt-BR */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		2E23DFDC2BC22F4200D3E38C /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2E23DFDB2BC22F4200D3E38C /* ru */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		2E23DFDE2BC22F4200D3E38C /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2E23DFDD2BC22F4200D3E38C /* fr */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		2E23DFE02BC22F4200D3E38C /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2E23DFDF2BC22F4200D3E38C /* nl */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		2E23DFE22BC22F4200D3E38C /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2E23DFE12BC22F4200D3E38C /* pl-PL */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		F08180392BC1CB5C00D9D99B /* Debug */ = {
