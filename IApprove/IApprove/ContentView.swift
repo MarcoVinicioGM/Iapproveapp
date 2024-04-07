@@ -1,38 +1,23 @@
-//
-//  ContentView.swift
-//  IApprove
-//
-//  Created by Muhanad Yennes on 4/6/24.
-//
-
 import SwiftUI
 import VisionKit
-    
+
 struct ContentView: View {
-    @State private var capturedImage: UIImage? = nil
-    @State private var isCustomCameraViewPresented = false
-    
     @State private var recognizedItems: [RecognizedItem] = []
+    @State private var scannedBarcode: String? = nil
 
     var body: some View {
         NavigationView {
             VStack {
-                DataScannerView(recognizedItems: $recognizedItems, recognizesMultipleItems: true)
-                    .navigationBarTitle("Barcode Scanner")
-                
-                Spacer()
-                
-                List(recognizedItems, id:\.id) { item in
-                    if case let .barcode(barcode) = item {
-                        Text(barcode.payloadStringValue ?? "Barcode not found")
+                DataScannerView(recognizedItems: $recognizedItems, recognizesMultipleItems: true) { recognizedItems in
+                    for item in recognizedItems {
+                        if case let .barcode(barcode) = item {
+                            self.scannedBarcode = barcode.payloadStringValue ?? "Unknown barcode"
+                        }
                     }
                 }
+                .navigationBarTitle("Barcode Scanner")
             }
-        }
-        .onAppear {
-            print("Recognized Items: \(recognizedItems)")
+            Text(scannedBarcode ?? "No barcode scanned")
         }
     }
 }
-
-
