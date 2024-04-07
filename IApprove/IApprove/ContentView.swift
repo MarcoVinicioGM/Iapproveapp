@@ -1,68 +1,6 @@
 import SwiftUI
 import VisionKit
 
-class ProductViewModel: ObservableObject {
-    @Published var ingredients: String?
-
-    func fetchProductInfo(barcode: String) {
-        // Construct the URL for the Open Food Facts API endpoint
-        let baseURL = "https://world.openfoodfacts.org/api/v0/product/"
-        let urlString = baseURL + barcode + ".json"
-        guard let url = URL(string: urlString) else {
-            print("Invalid URL")
-            return
-        }
-
-        // Create a URLSession object
-        let session = URLSession.shared
-
-        // Create a data task for the URL
-        let task = session.dataTask(with: url) { (data, response, error) in
-            // Check for errors
-            if let error = error {
-                print("Error: \(error.localizedDescription)")
-                return
-            }
-
-            // Check if a response was received
-            guard let httpResponse = response as? HTTPURLResponse,
-                  (200...299).contains(httpResponse.statusCode) else {
-                print("Invalid response")
-                return
-            }
-
-            // Check if data was returned
-            guard let responseData = data else {
-                print("No data returned")
-                return
-            }
-
-            do {
-                // Parse the JSON response
-                let json = try JSONSerialization.jsonObject(with: responseData, options: []) as! [String: Any]
-
-                // Check if product exists in the response
-                if let product = json["product"] as? [String: Any] {
-                    // Check if ingredients exist in the product
-                    if let ingredients = product["ingredients_text"] as? String {
-                        DispatchQueue.main.async {
-                            self.ingredients = ingredients
-                        }
-                    } else {
-                        print("Ingredients not found")
-                    }
-                } else {
-                    print("Product information not found")
-                }
-
-            } catch {
-                print("Error parsing JSON: \(error.localizedDescription)")
-            }
-        }
-
-        task.resume()
-    }
-}
 
 struct ContentView: View {
     @StateObject var viewModel = ProductViewModel()
@@ -119,6 +57,69 @@ struct ContentView: View {
         .padding()
     }
 
+    class ProductViewModel: ObservableObject {
+        @Published var ingredients: String?
+
+        func fetchProductInfo(barcode: String) {
+            // Construct the URL for the Open Food Facts API endpoint
+            let baseURL = "https://world.openfoodfacts.org/api/v0/product/"
+            let urlString = baseURL + barcode + ".json"
+            guard let url = URL(string: urlString) else {
+                print("Invalid URL")
+                return
+            }
+
+            // Create a URLSession object
+            let session = URLSession.shared
+
+            // Create a data task for the URL
+            let task = session.dataTask(with: url) { (data, response, error) in
+                // Check for errors
+                if let error = error {
+                    print("Error: \(error.localizedDescription)")
+                    return
+                }
+
+                // Check if a response was received
+                guard let httpResponse = response as? HTTPURLResponse,
+                      (200...299).contains(httpResponse.statusCode) else {
+                    print("Invalid response")
+                    return
+                }
+
+                // Check if data was returned
+                guard let responseData = data else {
+                    print("No data returned")
+                    return
+                }
+
+                do {
+                    // Parse the JSON response
+                    let json = try JSONSerialization.jsonObject(with: responseData, options: []) as! [String: Any]
+
+                    // Check if product exists in the response
+                    if let product = json["product"] as? [String: Any] {
+                        // Check if ingredients exist in the product
+                        if let ingredients = product["ingredients_text"] as? String {
+                            DispatchQueue.main.async {
+                                self.ingredients = ingredients
+                            }
+                        } else {
+                            print("Ingredients not found")
+                        }
+                    } else {
+                        print("Product information not found")
+                    }
+
+                } catch {
+                    print("Error parsing JSON: \(error.localizedDescription)")
+                }
+            }
+
+            task.resume()
+        }
+    }
+    
     func readTextFile() {
         // Read from txt file and add to list
         if let filePath = Bundle.main.path(forResource: "Harmful_Products", ofType: "txt") {
