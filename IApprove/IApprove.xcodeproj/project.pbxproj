@@ -10,7 +10,6 @@
 		2E14F2F52BC1DC6B00B87E03 /* CameraService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E14F2F42BC1DC6B00B87E03 /* CameraService.swift */; };
 		2E14F2F72BC1EFBD00B87E03 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E14F2F62BC1EFBD00B87E03 /* CameraView.swift */; };
 		2E14F2F92BC2032500B87E03 /* CustomCameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E14F2F82BC2032400B87E03 /* CustomCameraView.swift */; };
-		2E23DFBD2BC22F1F00D3E38C /* FoodAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E23DFBC2BC22F1F00D3E38C /* FoodAPI.swift */; };
 		2E23DFE52BC22F4200D3E38C /* BarcodeScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E23DFBE2BC22F4200D3E38C /* BarcodeScannerViewController.swift */; };
 		2E23DFE62BC22F4200D3E38C /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E23DFBF2BC22F4200D3E38C /* CameraViewController.swift */; };
 		2E23DFE72BC22F4200D3E38C /* HeaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E23DFC02BC22F4200D3E38C /* HeaderViewController.swift */; };
@@ -65,7 +64,6 @@
 		2E14F2F42BC1DC6B00B87E03 /* CameraService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraService.swift; sourceTree = "<group>"; };
 		2E14F2F62BC1EFBD00B87E03 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
 		2E14F2F82BC2032400B87E03 /* CustomCameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCameraView.swift; sourceTree = "<group>"; };
-		2E23DFBC2BC22F1F00D3E38C /* FoodAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FoodAPI.swift; path = ../../../../Mainapprove/IApprove/IApprove/FoodAPI.swift; sourceTree = "<group>"; };
 		2E23DFBE2BC22F4200D3E38C /* BarcodeScannerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarcodeScannerViewController.swift; sourceTree = "<group>"; };
 		2E23DFBF2BC22F4200D3E38C /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		2E23DFC02BC22F4200D3E38C /* HeaderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderViewController.swift; sourceTree = "<group>"; };
@@ -229,7 +227,6 @@
 		F08180192BC1CB5900D9D99B /* IApprove */ = {
 			isa = PBXGroup;
 			children = (
-				2E23DFBC2BC22F1F00D3E38C /* FoodAPI.swift */,
 				F081801A2BC1CB5900D9D99B /* IApproveApp.swift */,
 				F081801C2BC1CB5A00D9D99B /* ContentView.swift */,
 				2E14F2F42BC1DC6B00B87E03 /* CameraService.swift */,
@@ -418,7 +415,6 @@
 			files = (
 				F081801D2BC1CB5A00D9D99B /* ContentView.swift in Sources */,
 				F081801B2BC1CB5900D9D99B /* IApproveApp.swift in Sources */,
-				2E23DFBD2BC22F1F00D3E38C /* FoodAPI.swift in Sources */,
 				2E14F2F92BC2032500B87E03 /* CustomCameraView.swift in Sources */,
 				2E14F2F52BC1DC6B00B87E03 /* CameraService.swift in Sources */,
 				2E14F2F72BC1EFBD00B87E03 /* CameraView.swift in Sources */,
@@ -671,10 +667,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"IApprove/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 3G9UVMW38D;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = "";
@@ -684,7 +681,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -704,10 +701,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"IApprove/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 3G9UVMW38D;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = "";
@@ -717,7 +715,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
