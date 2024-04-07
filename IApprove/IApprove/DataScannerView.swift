@@ -1,10 +1,3 @@
-//
-// DataScannerView.swift
-// BarcodeTextScanner
-//
-// Created by Alfian Losari on 6/25/22.
-//
-
 import Foundation
 import SwiftUI
 import VisionKit
@@ -52,17 +45,6 @@ struct DataScannerView: UIViewControllerRepresentable {
             UINotificationFeedbackGenerator().notificationOccurred(.success)
             recognizedItems.append(contentsOf: addedItems)
             print("didAddItems \(addedItems)")
-        }
-
-        func dataScanner(_ dataScanner: DataScannerViewController, didRemove removedItems: [RecognizedItem], allItems: [RecognizedItem]) {
-            self.recognizedItems = recognizedItems.filter { item in
-                !removedItems.contains(where: { $0.id == item.id })
-            }
-            print("didRemovedItems \(removedItems)")
-        }
-
-        func dataScanner(_ dataScanner: DataScannerViewController, becameUnavailableWithError error: DataScannerViewController.ScanningUnavailable) {
-            print("became unavailable with error \(error.localizedDescription)")
         }
     }
 }

@@ -16,30 +16,31 @@ class CameraService{
     let output = AVCapturePhotoOutput()
     let previewLayer = AVCaptureVideoPreviewLayer()
     
-    func start(delegate: AVCapturePhotoCaptureDelegate, completeion: @escaping (Error?) -> ()) {
+    func boot(delegate: AVCapturePhotoCaptureDelegate, completeion: @escaping (Error?) -> ()) {
         self.delegate = delegate
-        checkPermission(completeion: completeion)
+        checkPerm(completeion: completeion)
     }
     
-    private func checkPermission(completeion: @escaping(Error?) -> ()) {
+    
+    private func checkPerm(completeion: @escaping(Error?) -> ()) {
         switch AVCaptureDevice.authorizationStatus(for: .video){
         case .notDetermined:
             AVCaptureDevice.requestAccess(for: .video){ [weak self] granted in guard granted else {return}
             DispatchQueue.main.async {
                 self?.setupCamera(completion: completeion)
-                
             }
         }
         case .authorized:
             setupCamera(completion: completeion)
         case .restricted:
-            print("User is restricted")
+            print("THIS WILL NEVER BE PRINTED")
         case .denied:
-            print("User is denied")
+            print("THIS WILL NEVER BE PRINTED")
         @unknown default:
-            print("Bruh What")
+            print("THIS WILL NEVER BE PRINTED")
         }
     }
+    
     private func setupCamera(completion: @escaping (Error?) -> ()){
         let session = AVCaptureSession()
         if let device = AVCaptureDevice.default(for: .video){
@@ -62,11 +63,5 @@ class CameraService{
                 completion(error)
             }
         }
-        
     }
-    func capturePhoto(with settings: AVCapturePhotoSettings =
-                      AVCapturePhotoSettings()){
-        output.capturePhoto(with: settings, delegate: delegate!)
-    }
-    
 }

@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		2E14F2F52BC1DC6B00B87E03 /* CameraService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E14F2F42BC1DC6B00B87E03 /* CameraService.swift */; };
 		2E14F2F72BC1EFBD00B87E03 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E14F2F62BC1EFBD00B87E03 /* CameraView.swift */; };
-		2E14F2F92BC2032500B87E03 /* CustomCameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E14F2F82BC2032400B87E03 /* CustomCameraView.swift */; };
 		2E23DFE52BC22F4200D3E38C /* BarcodeScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E23DFBE2BC22F4200D3E38C /* BarcodeScannerViewController.swift */; };
 		2E23DFE62BC22F4200D3E38C /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E23DFBF2BC22F4200D3E38C /* CameraViewController.swift */; };
 		2E23DFE72BC22F4200D3E38C /* HeaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E23DFC02BC22F4200D3E38C /* HeaderViewController.swift */; };
@@ -63,7 +62,6 @@
 /* Begin PBXFileReference section */
 		2E14F2F42BC1DC6B00B87E03 /* CameraService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraService.swift; sourceTree = "<group>"; };
 		2E14F2F62BC1EFBD00B87E03 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
-		2E14F2F82BC2032400B87E03 /* CustomCameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCameraView.swift; sourceTree = "<group>"; };
 		2E23DFBE2BC22F4200D3E38C /* BarcodeScannerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarcodeScannerViewController.swift; sourceTree = "<group>"; };
 		2E23DFBF2BC22F4200D3E38C /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		2E23DFC02BC22F4200D3E38C /* HeaderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderViewController.swift; sourceTree = "<group>"; };
@@ -230,7 +228,6 @@
 				F081801A2BC1CB5900D9D99B /* IApproveApp.swift */,
 				F081801C2BC1CB5A00D9D99B /* ContentView.swift */,
 				2E14F2F42BC1DC6B00B87E03 /* CameraService.swift */,
-				2E14F2F82BC2032400B87E03 /* CustomCameraView.swift */,
 				2E14F2F62BC1EFBD00B87E03 /* CameraView.swift */,
 				F081801E2BC1CB5B00D9D99B /* Assets.xcassets */,
 				F08180202BC1CB5B00D9D99B /* Preview Content */,
@@ -415,7 +412,6 @@
 			files = (
 				F081801D2BC1CB5A00D9D99B /* ContentView.swift in Sources */,
 				F081801B2BC1CB5900D9D99B /* IApproveApp.swift in Sources */,
-				2E14F2F92BC2032500B87E03 /* CustomCameraView.swift in Sources */,
 				2E14F2F52BC1DC6B00B87E03 /* CameraService.swift in Sources */,
 				2E14F2F72BC1EFBD00B87E03 /* CameraView.swift in Sources */,
 				2E23DFFF2BC241C300D3E38C /* DataScannerView.swift in Sources */,
@@ -671,7 +667,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"IApprove/Preview Content\"";
-				DEVELOPMENT_TEAM = 3G9UVMW38D;
+				DEVELOPMENT_TEAM = J96F99MHVZ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = "";
