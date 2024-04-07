@@ -33,8 +33,9 @@
 		2E23DFFA2BC22F4200D3E38C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2E23DFE02BC22F4200D3E38C /* Localizable.strings */; };
 		2E23DFFB2BC22F4200D3E38C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2E23DFE22BC22F4200D3E38C /* Localizable.strings */; };
 		2E23DFFF2BC241C300D3E38C /* DataScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E23DFFE2BC241C300D3E38C /* DataScannerView.swift */; };
+		F079B5E92BC2EC02006A5EAD /* Harmful_Products.txt in Resources */ = {isa = PBXBuildFile; fileRef = F079B5E62BC2EC02006A5EAD /* Harmful_Products.txt */; };
+		F079B5EB2BC2EC02006A5EAD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F079B5E82BC2EC02006A5EAD /* ContentView.swift */; };
 		F081801B2BC1CB5900D9D99B /* IApproveApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F081801A2BC1CB5900D9D99B /* IApproveApp.swift */; };
-		F081801D2BC1CB5A00D9D99B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F081801C2BC1CB5A00D9D99B /* ContentView.swift */; };
 		F081801F2BC1CB5B00D9D99B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F081801E2BC1CB5B00D9D99B /* Assets.xcassets */; };
 		F08180222BC1CB5B00D9D99B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F08180212BC1CB5B00D9D99B /* Preview Assets.xcassets */; };
 		F081802C2BC1CB5C00D9D99B /* IApproveTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F081802B2BC1CB5C00D9D99B /* IApproveTests.swift */; };
@@ -86,9 +87,10 @@
 		2E23DFDF2BC22F4200D3E38C /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/Localizable.strings; sourceTree = "<group>"; };
 		2E23DFE12BC22F4200D3E38C /* pl-PL */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pl-PL"; path = "pl-PL.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		2E23DFFE2BC241C300D3E38C /* DataScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataScannerView.swift; sourceTree = "<group>"; };
+		F079B5E62BC2EC02006A5EAD /* Harmful_Products.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Harmful_Products.txt; path = ../../../Developer/Test/Test/Harmful_Products.txt; sourceTree = "<group>"; };
+		F079B5E82BC2EC02006A5EAD /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContentView.swift; path = ../../../Developer/Test/Test/ContentView.swift; sourceTree = "<group>"; };
 		F08180172BC1CB5900D9D99B /* IApprove.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IApprove.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F081801A2BC1CB5900D9D99B /* IApproveApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IApproveApp.swift; sourceTree = "<group>"; };
-		F081801C2BC1CB5A00D9D99B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F081801E2BC1CB5B00D9D99B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F08180212BC1CB5B00D9D99B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F08180272BC1CB5C00D9D99B /* IApproveTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IApproveTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -226,8 +228,9 @@
 			isa = PBXGroup;
 			children = (
 				F081801A2BC1CB5900D9D99B /* IApproveApp.swift */,
-				F081801C2BC1CB5A00D9D99B /* ContentView.swift */,
 				2E14F2F42BC1DC6B00B87E03 /* CameraService.swift */,
+				F079B5E82BC2EC02006A5EAD /* ContentView.swift */,
+				F079B5E62BC2EC02006A5EAD /* Harmful_Products.txt */,
 				2E14F2F62BC1EFBD00B87E03 /* CameraView.swift */,
 				F081801E2BC1CB5B00D9D99B /* Assets.xcassets */,
 				F08180202BC1CB5B00D9D99B /* Preview Content */,
@@ -375,6 +378,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F08180222BC1CB5B00D9D99B /* Preview Assets.xcassets in Resources */,
+				F079B5E92BC2EC02006A5EAD /* Harmful_Products.txt in Resources */,
 				F081801F2BC1CB5B00D9D99B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -410,8 +414,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F081801D2BC1CB5A00D9D99B /* ContentView.swift in Sources */,
 				F081801B2BC1CB5900D9D99B /* IApproveApp.swift in Sources */,
+				F079B5EB2BC2EC02006A5EAD /* ContentView.swift in Sources */,
 				2E14F2F52BC1DC6B00B87E03 /* CameraService.swift in Sources */,
 				2E14F2F72BC1EFBD00B87E03 /* CameraView.swift in Sources */,
 				2E23DFFF2BC241C300D3E38C /* DataScannerView.swift in Sources */,
@@ -667,7 +671,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"IApprove/Preview Content\"";
-				DEVELOPMENT_TEAM = J96F99MHVZ;
+				DEVELOPMENT_TEAM = 3G9UVMW38D;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = "";
