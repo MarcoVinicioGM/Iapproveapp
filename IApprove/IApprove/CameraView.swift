@@ -15,7 +15,7 @@ struct CameraView: UIViewControllerRepresentable {
     let cameraService: CameraService
     let didFinishProcessingPhoto: (Result<AVCapturePhoto,Error> ) -> ()
     func makeUIViewController(context: Context) -> UIViewController {
-        cameraService.start(delegate: context.coordinator){err in
+        cameraService.boot(delegate: context.coordinator){err in
             if let err = err{
                 didFinishProcessingPhoto(.failure(err))
             }

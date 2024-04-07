@@ -1,23 +1,33 @@
+
 import SwiftUI
 import VisionKit
 
+    
 struct ContentView: View {
+    
+    @State private var barcodNumber: String
     @State private var recognizedItems: [RecognizedItem] = []
-    @State private var scannedBarcode: String? = nil
-
+    
     var body: some View {
         NavigationView {
             VStack {
-                DataScannerView(recognizedItems: $recognizedItems, recognizesMultipleItems: true) { recognizedItems in
-                    for item in recognizedItems {
-                        if case let .barcode(barcode) = item {
-                            self.scannedBarcode = barcode.payloadStringValue ?? "Unknown barcode"
-                        }
+                //VisionKit handles barcode scanning
+                DataScannerView(recognizedItems: $recognizedItems, recognizesMultipleItems: true)
+                    .navigationBarTitle("Scan your barcode")
+                
+                Spacer()
+                //Creates list view that displays recognized Items only barcodes
+                List(recognizedItems, id: \.id) { item in
+                    if case let .barcode(barcode) = item {
+                        Text(barcode.payloadStringValue ?? "Unknown barcode")
+                            .padding()
+                            .background(Color.gray.opacity(0.2))
+                            .cornerRadius(10)
                     }
                 }
-                .navigationBarTitle("Barcode Scanner")
+                .listStyle(PlainListStyle())
+                .padding()
             }
-            Text(scannedBarcode ?? "No barcode scanned")
         }
     }
 }
