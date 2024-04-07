@@ -38,7 +38,6 @@ struct DataScannerView: UIViewControllerRepresentable {
     // All based around DataScannerViweControllerDelegate protocol to handle events
     class Coordinator: NSObject, DataScannerViewControllerDelegate {
         @Binding var recognizedItems: [RecognizedItem]
-        @Binding var barcodeItem: [String]
 
         init(recognizedItems: Binding<[RecognizedItem]>) {
             self._recognizedItems = recognizedItems
@@ -46,7 +45,6 @@ struct DataScannerView: UIViewControllerRepresentable {
         // Following functions is called when user taps on item or just when new items are recognized depending on scalability
         func dataScanner(_ dataScanner: DataScannerViewController, didTapOn item: RecognizedItem) {
             print("didTapOn \(item)")
-            barcodeItem = item
         }
 
         func dataScanner(_ dataScanner: DataScannerViewController, didAdd addedItems: [RecognizedItem], allItems: [RecognizedItem]) {
