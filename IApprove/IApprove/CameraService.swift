@@ -9,6 +9,8 @@ import Foundation
 import AVFoundation
 
 class CameraService{
+
+    //Capture potentially redudant with new session implementations
     
     var session: AVCaptureSession?
     var delegate: AVCapturePhotoCaptureDelegate?
@@ -21,7 +23,7 @@ class CameraService{
         checkPerm(completeion: completeion)
     }
     
-    
+    // Permissions are necessary for new users to be allowed to boot
     private func checkPerm(completeion: @escaping(Error?) -> ()) {
         switch AVCaptureDevice.authorizationStatus(for: .video){
         case .notDetermined:
@@ -30,6 +32,7 @@ class CameraService{
                 self?.setupCamera(completion: completeion)
             }
         }
+        //For demo purposes only authorized user checks will be handled
         case .authorized:
             setupCamera(completion: completeion)
         case .restricted:

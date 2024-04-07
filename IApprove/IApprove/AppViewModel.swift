@@ -56,7 +56,8 @@ final class AppViewModel: ObservableObject {
     private var isScannerAvailable: Bool {
         DataScannerViewController.isAvailable && DataScannerViewController.isSupported
     }
-    
+    // Represents access status for potential error checking
+    // Also main workhorse in authorization from CameraService check Perm
     func requestDataScannerAccessStatus() async {
         guard UIImagePickerController.isSourceTypeAvailable(.camera) else {
             dataScannerAccessStatus = .cameraNotAvailable
