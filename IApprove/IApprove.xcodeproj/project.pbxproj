@@ -227,10 +227,10 @@
 		F08180192BC1CB5900D9D99B /* IApprove */ = {
 			isa = PBXGroup;
 			children = (
+				F079B5E62BC2EC02006A5EAD /* Harmful_Products.txt */,
 				F081801A2BC1CB5900D9D99B /* IApproveApp.swift */,
 				2E14F2F42BC1DC6B00B87E03 /* CameraService.swift */,
 				F079B5E82BC2EC02006A5EAD /* ContentView.swift */,
-				F079B5E62BC2EC02006A5EAD /* Harmful_Products.txt */,
 				2E14F2F62BC1EFBD00B87E03 /* CameraView.swift */,
 				F081801E2BC1CB5B00D9D99B /* Assets.xcassets */,
 				F08180202BC1CB5B00D9D99B /* Preview Content */,
